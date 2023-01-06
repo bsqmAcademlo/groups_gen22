@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+
+:root {
+    --bg: #000;
+    --color: #b9e7ff;
+    --color-border: #0081c9;
+    --color-primary: #5bc0f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+h2,
+h3 {
+    color: var(--color-primary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.containerUsers {
+    display: grid;
+    gap: 3rem;
+}
+
+.group {
+    padding: 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.group h2 {
+    text-align: center;
+}
+
+.subGroups {
+    display: grid;
+    gap: 1rem;
+}
+
+.subGroup {
+    padding: 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.integrants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.integrant {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrant p:nth-child(2) {
+    font-size: 0.8rem;
+}
